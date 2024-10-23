@@ -1,13 +1,12 @@
 """
-Dado un número de dos cifras, diseñe un programa que permita obtener el
-número invertido.
+Programa que permita obtener el
+número invertido de un numero dado.
 """
-# Pedimos al usuario que ingrese un número de dos cifras
-numero = int(input("Ingrese un número de dos cifras: "))
 
-# Separamos las cifras y Invertimos las cifras
-cifraunidades = numero % 10
-cifradecenas = numero // 10
-Ninvertido = cifraunidades * 10 + cifradecenas
-# Imprimimos el resultado
-print("El número invertido es:", Ninvertido)
+a = int(input("Ingrese un número de dos cifras: "))
+
+cifra_unidades = a % 10
+cifra_decenas = a // 10
+N_inv = cifra_unidades * 10 + cifra_decenas
+
+print("El número invertido es:", N_inv)
