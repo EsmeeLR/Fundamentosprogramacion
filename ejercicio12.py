@@ -1,11 +1,14 @@
 """
-Programa que pide al usuario dos pares de números (x1,y2) y (x2,y2), 
-que representen dos puntos en el plano y calcula la distancia entre ellos.
+ Programa que pide al usuario dos pares de números x1,y2 y x2,y2, que representen dos
+puntos en el plano. Calcula y muestra la distancia entre ellos.
 """
-x1 = int(input("¿Cuál es el valor de x1? "))
-x2 = int(input("¿Cuál es el valor de x2? "))
-y1 = int(input("¿Cuál es el valor de y1? "))
-y2 = int(input("¿Cuál es el valor de y2? "))
+import math
 
-distancia = (((x2 - x1)**2 + (y2 - y1)**2)) 0.5
-print("La distarncia entre los puntos es:",distancia)
+x1 = float(input("Ingrese la coordenada x1: "))
+y1 = float(input("Ingrese la coordenada y1: "))
+x2 = float(input("Ingrese la coordenada x2: "))
+y2 = float(input("Ingrese la coordenada y2:  "))
+
+d = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+
+print("La distancia entre los dos puntos es:", d)
